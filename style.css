@@ -1,0 +1,97 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  overflow:hidden;
+}
+  body{
+  text-align: center;
+  background-size: contain;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 3fr 2fr  ;
+  grid-template-rows: 10vh 35vh 55vh;
+}
+
+
+h1{
+  text-align: center;
+  font-size: 5vh;
+}
+
+h2{
+  text-align: center;
+  font-size: 4vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+h3{
+  font-size: 3vh;
+  margin-bottom: 2vh;
+}
+li{
+  text-align: center;
+  font-size: 3vh;
+  margin-bottom: 3vh;
+}
+
+.mattb{
+  background-color: orange;
+  grid-column: 1/3;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  flex-direction:column;
+}
+
+.link{
+  background-color: #8B4513;
+}
+
+.trell{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  flex-direction:column;
+}
+
+.information{
+  grid-column: 1/3;
+  background-color: green;
+}
+
+.text{
+  text-align: center;
+  font-size: 3vh;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+a:link{
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 768px){
+
+  .link{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    }
+  .text{
+    text-align: center;
+    font-size: 3vh;
+    margin-top: 10vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+}
